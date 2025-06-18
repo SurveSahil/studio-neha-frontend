@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Neha Beauty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .section-bg {
+            background: linear-gradient(135deg, #fff7f7, #f9e6e6);
+        }
+        .gallery-img {
+            transition: opacity 0.3s ease;
+        }
+        .gallery-img:hover {
+            opacity: 0.8;
+        }
+        #form-message {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+        .success {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+        .error {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-pink-600">Studio Neha Beauty</div>
+                <div class="space-x-4">
+                    <a href="#home" class="text-gray-700 hover:text-pink-500">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-pink-500">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-pink-500">Services</a>
+                    <a href="#gallery" class="text-gray-700 hover:text-pink-500">Gallery</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-pink-500">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pink-500">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section-bg py-20 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-bold text-pink-700 mb-4">Studio Neha Beauty</h1>
+            <p class="text-xl text-gray-600 mb-6">Bringing Out the Best in You</p>
+            <a href="#contact" class="inline-block bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 hover-scale">📅 Book Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-pink-700 mb-10">About Neha</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="https://via.placeholder.com/500" alt="Neha" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Professional Makeup Artist & Hair Stylist</h3>
+                    <p class="text-gray-600 mb-4">With over 5 years of experience in the beauty industry, I am passionate about enhancing natural beauty and creating stunning looks for every occasion. I hold certifications in professional makeup artistry and advanced hair styling techniques.</p>
+                    <p class="text-gray-600 mb-4">My journey began with a love for art and creativity, which naturally evolved into the world of beauty and glamour. I believe that every person is unique and deserves to feel confident and beautiful.</p>
+                    <p class="text-gray-600 mb-4">I specialize in creating personalized looks that reflect your personality while ensuring you look and feel your absolute best for your special moments.</p>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Bridal Makeup</li>
+                        <li>Party Looks</li>
+                        <li>Photoshoots</li>
+                        <li>Hair Styling</li>
+                        <li>Saree Draping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-bg py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-pink-700 mb-10">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-4xl mb-4">💄</div>
+                    <h3 class="text-xl font-semibold mb-2">Bridal Makeup</h3>
+                    <p class="text-gray-600 mb-4">Complete bridal transformation with long-lasting makeup perfect for your special day</p>
+                    <p class="text-pink-600 font-bold mb-4">Starting from ₹8,000</p>
+                    <a href="#contact" class="text-pink-500 hover:text-pink-700">Book Now</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-4xl mb-4">💃</div>
+                    <h3 class="text-xl font-semibold mb-2">Party Makeup</h3>
+                    <p class="text-gray-600 mb-4">Glamorous party looks that make you stand out at any celebration</p>
+                    <p class="text-pink-600 font-bold mb-4">Starting from ₹3,500</p>
+                    <a href="#contact" class="text-pink-500 hover:text-pink-700">Book Now</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-4xl mb-4">💇‍♀️</div>
+                    <h3 class="text-xl font-semibold mb-2">Hair Styling</h3>
+                    <p class="text-gray-600 mb-4">Professional hair styling for weddings, parties, and special occasions</p>
+                    <p class="text-pink-600 font-bold mb-4">Starting from ₹2,500</p>
+                    <a href="#contact" class="text-pink-500 hover:text-pink-700">Book Now</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-4xl mb-4">👗</div>
+                    <h3 class="text-xl font-semibold mb-2">Saree Draping</h3>
+                    <p class="text-gray-600 mb-4">Expert saree draping in various traditional and contemporary styles</p>
+                    <p class="text-pink-600 font-bold mb-4">Starting from ₹1,500</p>
+                    <a href="#contact" class="text-pink-500 hover:text-pink-700">Book Now</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-4xl mb-4">📸</div>
+                    <h3 class="text-xl font-semibold mb-2">Photoshoot Makeup</h3>
+                    <p class="text-gray-600 mb-4">Professional makeup for photoshoots, portfolio, and fashion shoots</p>
+                    <p class="text-pink-600 font-bold mb-4">Starting from ₹4,000</p>
+                    <a href="#contact" class="text-pink-500 hover:text-pink-700">Book Now</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="text-xl font-semibold mb-2">Complete Makeover</h3>
+                    <p class="text-gray-600 mb-4">Full transformation package including makeup, hair styling, and draping</p>
+                    <p class="text-pink-600 font-bold mb-4">Starting from ₹10,000</p>
+                    <a href="#contact" class="text-pink-500 hover:text-pink-700">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-pink-700 mb-10">Portfolio Gallery</h2>
+            <div class="flex justify-center space-x-4 mb-6">
+                <button class="px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600">All</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Bridal</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Party</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Fashion</button>
+                <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Hair Styling</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Bridal Look 1" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Bridal Look 1: Before & After</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Party Glam 1" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Party Glam 1: Transformation</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Bridal Look 2" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Bridal Look 2: Traditional Style</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Fashion Shoot" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Fashion Shoot: Bold & Beautiful</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Hair Styling" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Hair Styling: Elegant Updo</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Party Look 2" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Party Look 2: Smokey Eyes</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Bridal Look 3" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Bridal Look 3: Modern Glam</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Editorial Shoot" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Editorial Shoot: Artistic Vision</p>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://via.placeholder.com/300" alt="Bridal Hair" class="rounded-lg shadow-lg">
+                    <p class="text-center text-gray-600 mt-2">Bridal Hair: Intricate Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-bg py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-pink-700 mb-10">What Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"Neha made me feel like a princess on my wedding day! Her attention to detail and artistic skills are incredible. I received so many compliments on my makeup and hair."</p>
+                    <p class="text-pink-600 font-semibold">- Priya Sharma</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"I was amazed by the transformation! Neha understood exactly what I wanted and delivered beyond my expectations. Highly recommend for any special occasion."</p>
+                    <p class="text-pink-600 font-semibold">- Kavya Patel</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"Professional, punctual, and incredibly talented! Neha's work is flawless and she makes you feel so comfortable throughout the process."</p>
+                    <p class="text-pink-600 font-semibold">- Sneha Gupta</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"The best makeup artist in town! My party look was absolutely stunning. Thank you Neha for making me feel so confident and beautiful."</p>
+                    <p class="text-pink-600 font-semibold">- Riya Singh</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"Neha's hair styling skills are exceptional! She created the most beautiful hairstyle for my sangeet ceremony. Everyone loved it!"</p>
+                    <p class="text-pink-600 font-semibold">- Anita Joshi</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <p class="text-gray-600 italic mb-4">"Perfect for photoshoots! Neha knows exactly how to create looks that photograph beautifully. My portfolio shots turned out amazing!"</p>
+                    <p class="text-pink-600 font-semibold">- Meera Shah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-pink-700 mb-10">Book Your Appointment</h2>
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                    <p class="text-gray-600 mb-4">📧 Submit the form to book your appointment, and we'll confirm via email!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">📱</span>
+                            <div>
+                                <p class="font-semibold">WhatsApp</p>
+                                <a href="https://wa.me/919082406711" class="text-pink-500 hover:text-pink-700">+91 90824 06711</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">📞</span>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <a href="tel:+919082406711" class="text-pink-500 hover:text-pink-700">+91 90824 06711</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">📸</span>
+                            <div>
+                                <p class="font-semibold">Instagram</p>
+                                <a href="https://instagram.com/studioNehabeauty" class="text-pink-500 hover:text-pink-700">@studioNehabeauty</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">📍</span>
+                            <div>
+                                <p class="font-semibold">Location</p>
+                                <p class="text-gray-600">Mumbai, Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">⏰</span>
+                            <div>
+                                <p class="font-semibold">Working Hours</p>
+                                <p class="text-gray-600">Mon-Sun: 9:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6">Quick Booking Form</h3>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <form id="booking-form" onsubmit="submitBooking(event)">
+                            <div class="space-y-4">
+                                <input type="text" id="name" placeholder="Your Name" class="w-full p-3 border rounded-lg" required>
+                                <select id="service" class="w-full p-3 border rounded-lg" required>
+                                    <option value="">Select a service</option>
+                                    <option value="Bridal Makeup">Bridal Makeup</option>
+                                    <option value="Party Makeup">Party Makeup</option>
+                                    <option value="Hair Styling">Hair Styling</option>
+                                    <option value="Saree Draping">Saree Draping</option>
+                                    <option value="Photoshoot Makeup">Photoshoot Makeup</option>
+                                    <option value="Complete Makeover">Complete Makeover</option>
+                                </select>
+                                <input type="date" id="date" class="w-full p-3 border rounded-lg" required>
+                                <input type="time" id="time" class="w-full p-3 border rounded-lg" required>
+                                <textarea id="details" placeholder="Additional Details" class="w-full p-3 border rounded-lg"></textarea>
+                                <button type="submit" class="inline-block bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 hover-scale">📧 Submit Booking Request</button>
+                            </div>
+                            <div id="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>© 2024 Studio Neha Beauty. All rights reserved. | Professional Makeup Artist & Hair Stylist</p>
+    </footer>
+
+    <script>
+        async function submitBooking(event) {
+            event.preventDefault();
+            const form = event.target;
+            const messageDiv = document.getElementById('form-message');
+            const name = document.getElementById('name').value.trim();
+            const service = document.getElementById('service').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const details = document.getElementById('details').value.trim() || 'None';
+
+            messageDiv.style.display = 'none';
+            messageDiv.classList.remove('success', 'error');
+
+            if (!name || !service || !date || !time) {
+                messageDiv.textContent = 'Please fill in all required fields.';
+                messageDiv.classList.add('error');
+                messageDiv.style.display = 'block';
+                return;
+            }
+
+            try {
+                const response = await fetch('https://studio-neha-backend-xe39.vercel.app/api/send-booking', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, service, date, time, details })
+                });
+                const result = await response.json();
+                if (result.success) {
+                    messageDiv.textContent = 'Booking request sent successfully! Check your email for confirmation.';
+                    messageDiv.classList.add('success');
+                    messageDiv.style.display = 'block';
+                    form.reset(); // Clear form
+                } else {
+                    messageDiv.textContent = `Error sending booking request: ${result.error}`;
+                    messageDiv.classList.add('error');
+                    messageDiv.style.display = 'block';
+                }
+            } catch (error) {
+                messageDiv.textContent = `Error: ${error.message}`;
+                messageDiv.classList.add('error');
+                messageDiv.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
